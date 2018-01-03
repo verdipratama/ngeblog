@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="hidden" :name="'meta_id[]'" :value="metaData.id">
+    <input type="hidden" :name="'meta_id[]'" :value="metaData.meta_id">
     <input type="hidden" :name="'meta_field[]'" :value="metaData.meta_field">
     <template v-if="metaData.meta_field == 'textarea'">
       <textarea :name="'meta_value[]'" class="textarea" rows="4" :value="getValueByIndex(theIndex)"></textarea>
